@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - files/
+    - assets/
+
+website:
+  title: "Bruno Moreira"
+  site-url: "https://brunosuzano.github.io"
+  description: "Bruno Moreira, PhD candidate in Finance at Lancaster University Management School. High-frequency asset pricing and financial econometrics."
+  open-graph: true
+
+format:
+  html:
+    minimal: true
+    css: styles.css
+    toc: false
+    section-divs: true
+    anchor-sections: false
+    lang: en-GB
+    include-in-header:
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+    include-after-body:
+      - text: |
+          <script src="assets/freq.js"></script>

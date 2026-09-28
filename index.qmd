@@ -1,0 +1,104 @@
+---
+pagetitle: "Bruno Moreira · Finance PhD, Lancaster"
+---
+
+```{=html}
+<header class="hero">
+  <img class="portrait" src="assets/photo.jpg" alt="Portrait of Bruno Moreira" width="480" height="480">
+  <div class="hero-text">
+    <p class="eyebrow">PhD Candidate in Finance</p>
+    <h1>Bruno Moreira</h1>
+    <p class="affil">Lancaster University Management School</p>
+    <p class="supervisors">Supervisors: Ingmar Nolte and Sandra Nolte</p>
+    <p class="lede">I study how equity factors, betas and risk premia change with the frequency at which returns are measured, from one second to one month. My research is in high-frequency asset pricing and financial econometrics, with a focus on factor models, high-frequency data, transaction costs and portfolio rebalancing.</p>
+    <nav class="links" aria-label="Contact and profiles">
+      <a class="btn-primary" href="files/Bruno_Moreira_CV.pdf">CV <span aria-hidden="true">(PDF)</span></a>
+      <a href="mailto:bruno.moreira@lancaster.ac.uk">bruno.moreira@lancaster.ac.uk</a>
+      <a href="https://github.com/brunosuzano">GitHub</a>
+      <a href="https://www.linkedin.com/in/bruno-sv-moreira/">LinkedIn</a>
+    </nav>
+  </div>
+</header>
+
+<figure class="freq" id="freq">
+  <div class="freq-bar">
+    <div class="freq-chips" role="group" aria-label="Sampling frequency">
+      <span class="freq-label">Sampled every</span>
+      <button type="button" id="f-10s"  data-step="1"   aria-pressed="false">10 s</button>
+      <button type="button" id="f-1m"   data-step="6"   aria-pressed="false">1 min</button>
+      <button type="button" id="f-5m"   data-step="30"  aria-pressed="true">5 min</button>
+      <button type="button" id="f-30m"  data-step="180" aria-pressed="false">30 min</button>
+    </div>
+    <p class="freq-stat">Realised variance <output id="freq-rv">–</output></p>
+  </div>
+  <canvas id="freq-canvas" aria-label="A simulated intraday price path, drawn at the selected sampling frequency" role="img"></canvas>
+  <figcaption>One simulated trading day, 09:30–16:00, with bid–ask noise. The same prices look different depending on how often you sample them, and so does the variance you measure from them.</figcaption>
+</figure>
+```
+
+## Research {#research}
+
+::: {.entry}
+[The Frequency Term Structure of Equity Factors]{.entry-title}
+
+[with Ingmar Nolte and Sandra Nolte]{.entry-authors}
+[Work in progress · Presented at the 5th Frontiers of Factor Investing Conference (2026)]{.entry-status}
+
+Empirical asset pricing studies almost always fix a single sampling frequency per analysis. This paper asks how the equity factor structure changes with the frequency at which returns are measured, from one second to one month, using a new high-frequency zoo of 662 factors built from 5,961 U.S. stocks (2014–2024).
+
+<details>
+<summary>Full abstract</summary>
+
+Empirical asset pricing studies almost always fix a single sampling frequency per analysis. Monthly returns dominate the classical literature, daily returns are common, and a high-frequency strand works at sub-hour horizons, but in each case the analysis is conducted at one frequency only. This paper asks how the equity factor structure changes with the frequency at which returns are measured, and answers the question by tracing the term structure of Fama–MacBeth betas and risk premia for the Fama–French six-factor model (FF6) and the Jensen–Kelly–Pedersen factor zoo (JKP) across a dense grid of sampling frequencies spanning seven orders of magnitude in time, from one second to one calendar month, plus a dedicated overnight series, estimated on a novel high-frequency factor zoo of 662 factors built from 5,961 U.S. common stocks over 2014–2024. We implement the classical Shanken-corrected Fama–MacBeth procedure alongside the large-*N* bias-adjusted WLS estimator of Raponi, Robotti, and Zaffaroni with formal specification testing and a centred cross-sectional *R*² at every frequency, and we derive a closed-form rebalancing-drag correction that strips a mechanical compounding wedge out of cross-frequency lambda comparisons. Preliminary findings: the factor structure is not scale-invariant; the market factor and momentum are priced across the bulk of the term structure while HML, CMA, and RMW are not; the daily frequency appears to be a meaningful break in the factor structure; and the overnight regime is qualitatively different from either of its adjacent regimes.
+
+[**Keywords:** factor models; Fama–MacBeth; high-frequency data; term structure; rebalancing drag; stochastic portfolio theory. **JEL:** G12, G14, C21, C58.]{.entry-keywords}
+
+</details>
+:::
+
+## Teaching {#teaching}
+
+::: {.rows}
+[Financial Econometrics (MSc)]{.row-title} [Workshop tutor · 2024–26]{.row-meta}
+[Teaching Excellence Certificate, 2024–25 and 2025–26]{.row-note .award}
+
+[Quantitative Methods for Finance (MSc)]{.row-title} [Workshop tutor · 2024–26]{.row-meta}
+
+[Quantitative Methods for Financial Management (MSc)]{.row-title} [Workshop tutor · 2024–26]{.row-meta}
+:::
+
+::: {.rows .qual}
+[Associate Fellow of the Higher Education Academy (AFHEA)]{.row-title}
+[Higher education teaching qualification (UK)]{.row-note}
+:::
+
+## Conferences {#conferences}
+
+::: {.timeline}
+[2026]{.year} [**5th Frontiers of Factor Investing**, presenter and organising team [Lancaster University Management School]{.role}]{.what}
+
+[2025]{.year} [**17th Annual SoFiE Conference**, attendee [ESSEC Business School]{.role}]{.what}
+
+[2024]{.year} [**4th Frontiers of Factor Investing**, organising team [Lancaster University Management School]{.role}]{.what}
+:::
+
+## Background {#background}
+
+::: {.timeline}
+[2023–now]{.year} [**PhD in Finance**, Lancaster University]{.what}
+
+[2023]{.year} [**Research Intern**, Invesco Quantitative Strategies, Frankfurt [MSc thesis research on dynamic rebalancing of factor portfolios]{.role}]{.what}
+
+[2021–23]{.year} [**MSc in Finance (double degree)**, Lancaster University and Universidade Católica Portuguesa (Porto) [Completed the full taught programmes of both universities and received both degrees. Shared thesis at Lancaster, with Invesco Quantitative Strategies: *Dynamic Rebalancing Strategies Applied to Factor Portfolios*]{.role} [Top of the cohort at both universities]{.role .award} [Chancellor's Medal, Lancaster University]{.role .award}]{.what}
+
+[2017–21]{.year} [**BSc in Economics**, Universidade Católica Portuguesa (Porto)]{.what}
+:::
+
+[**Tools:** Python, R, MATLAB, SAS, SQL, C++, Stata · TAQ high-frequency data]{.standalone}
+
+```{=html}
+<footer class="site-footer">
+  <p>bruno.moreira@lancaster.ac.uk · bruno.suzano.vaz@gmail.com</p>
+  <p>Last updated September 2026</p>
+</footer>
+```
